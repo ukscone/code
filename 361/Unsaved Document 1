@@ -1,0 +1,14 @@
+3. Write a function to traverse a threaded binary tree in postorder. What are
+the time and space requirements of your function?
+
+5. Consider threading a binary tree using preorder threads rather than inorder
+threads as in the text. Which of the traversals can be done without the use of a
+stack? For those that can be performed without a stack, write a c++ function to
+analyze its space complexity.
+
+15. A complex valued matrix X is represented by a pair of matrices (A,B) where A and B contain real values. Write a program that computes the product of two
+complex-value matrices (A,B) and (C,D), where (A,B) * (C,D) = (A + iB) * (C +
+iD) = (AC - BD) + i(AD + BC). Determine the number of additions and
+multiplications if the matrices are all n x n.
+
+(i) n^(1.001) + nlogn = (theta)(n^(1.001))

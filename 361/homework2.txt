@@ -1,0 +1,164 @@
+11
+
+void Tree<T>::NonrecInorder() {
+	Stack <TreeNode<T>*> s;
+	TreeNode<T> *currentNode = root;
+	if(currentNode) s.push(currentNode);
+	while(!s.IsEmpty()) {
+		while(currentNode->leftChild) {
+			currentNode = currentNode -> leftChild;
+			s.Push(currentNode);
+		}
+		s.Pop();
+		Visit(currentNode);
+		currentNode = currentNode -> rightChild;
+	}
+}
+
+5
+
+template <class T> Tree;
+
+template <class T>
+class FLOTreeIterator {
+	public:
+		friend class Tree<T>;
+		
+		FLOTreeIterator() {}
+		FLOTreeIterator(const FLOTreeIterator<T>& other) {
+			current = other.current;
+			q = other.q;
+		}
+		~FLOTreeIterator() {}
+		
+		FLOTreeIterator<T>& next() {
+			return (*this)++;
+		}
+		
+		FLOTreeIterator<T>& operator=(const FLOTreeIterator& other) {
+			if(&other == this) return;
+			current = other.current;
+			q = other.q;
+			return *this;
+		}
+		
+		FLOTreeIterator<T>& operator++() {
+			current = q.top();
+			q.pop();
+			q.push(current->leftChild);
+			q.push(current->rightChild);
+			return *this;
+		}
+		
+		FLOTreeIterator<T>& operator++(int) {
+			FLOTreeIterator temp(*this);
+			current = q.top();
+			q.pop();
+			q.push(current->leftChild);
+			q.push(current->rightChild);
+			return temp;
+		}
+		
+		T operator*() {return current->data;}
+		bool operator!=(const FLOTreeIterator& other) const {return current != other.current;}
+        bool operator==(const FLOTreeIterator& other) const {return current == other.current;}
+		
+	private:
+		TreeNode<T>* current;
+		Queue<TreeNode<T>*> q;
+}
+
+6
+
+void Tree<T>::NonrecPreorder(TreeNode<T>* current) {
+	Stack<TreeNode<T>*> s;
+	if(current) s.push(current);
+	while(1){
+		while(current->leftChild) {
+			Visit(current);
+			current = current->leftChild;
+			s.push(current);
+		}
+		Visit(current);
+		s.Pop();
+		current = current->rightChild;
+	}
+}
+
+7
+
+template <class T> Tree;
+
+template <class T>
+class PreorderTreeIterator {
+	public:
+		friend class Tree<T>;
+		
+		PreorderTreeIterator() {}
+		PreorderTreeIterator(const PreorderTreeIterator<T>& other) {
+			current = other.current;
+			s = other.s;
+		}
+		~PreorderTreeIterator() {}
+		
+		PreorderTreeIterator<T>& next() {
+			return (*this)++;
+		}
+		
+		PreorderTreeIterator<T>& operator=(const PreorderTreeIterator& other) {
+			if(&other == this) return;
+			current = other.current;
+			s = other.s;
+			return *this;
+		}
+		
+		PreorderTreeIterator<T>& operator++() {
+			if(current->leftChild) {
+				s.push(current);
+				current = current->leftChild;
+			}
+			else if(current->rightChild) {
+				current = current->rightChild;
+			}
+			else {
+				while(!current->rightChild) {
+					s.Pop();
+					current = s.Top();
+				}
+				current = current->rightChild;				
+			}
+			return *this;
+		}
+		
+		PreorderTreeIterator<T>& operator++(int) {
+			PreorderTreeIterator temp(*this);
+			if(current->leftChild) {
+				s.push(current);
+				current = current->leftChild;
+			}
+			else if(current->rightChild) {
+				current = current->rightChild;
+			}
+			else {
+				while(!current->rightChild) {
+					s.Pop();
+					current = s.Top();
+				}
+				current = current->rightChild;				
+			}
+			return temp;
+		}
+		
+		T operator*() {return current->data;}
+		bool operator!=(const PreorderTreeIterator& other) const {return current != other.current;}
+        bool operator==(const PreorderTreeIterator& other) const {return current == other.current;}
+		
+	private:
+		TreeNode<T>* current;
+		Stack<TreeNode<T>*> s;
+}
+
+3
+
+Time Requirements: O(n)
+Space Requirements: 

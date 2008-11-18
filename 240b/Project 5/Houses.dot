@@ -1,0 +1,31 @@
+digraph Houses {
+	fontsize = 15
+	rankdir = BT
+
+	node [
+		fontsize = 15
+		shape = "record"
+	]
+
+	edge [
+		penwidth = 2.0
+	]
+
+
+	SalariedEmployee [
+		label = "{SalariedEmployee|salary : double\l|get_salary() : double\lset_salary(new_salary : double) : void\lprint_check() : void\lserialize(id[] : const char) : void\lunserialize(id[] : const char) : void\lread_input() : void\lprint() : void\l}"
+	]
+
+	Employee [
+		label = "{Employee|name : string\lssn : string\lnet_pay : double\l|get_name() : string\lget_ssn() : string\lget_net_pay() : double\lset_name(new_name : string) : void\lset_ssn(new_ssn : string) : void\lset_net_pay(new_pay : double) : void\lprint_check() : void\lserialize(id[] : const char) : void\lunserialize(id[] : const char) : void\lread_input() : void\lprint() : void\l}"
+	]
+
+	Administrator [
+		label = "{Administrator|title : string\ldepartment : string\lsupervisor : string\lannual_salary : double\l|set_supervisor(new_supervisor : string) : void\lprint() : void\lprint_check() : void\lread_input() : void\lserialize(id[] : const char) : void\lunserialize(id[] : const char) : void\l}"
+	]
+	SalariedEmployee -> Employee
+
+
+	Administrator -> SalariedEmployee
+
+}

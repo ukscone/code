@@ -1,0 +1,19 @@
+this.forfeitWeight      = 35;
+this.frontierWeight     = 10;
+this.mobilityWeight     =  5;
+this.stabilityWeight    = 50;
+
+testMove.rank =
+	this.forfeitWeight   * forfeit +
+	this.frontierWeight  * (testBoard.BlackFrontierCount - testBoard.WhiteFrontierCount) +
+	this.mobilityWeight  * color * (validMoves - opponentValidMoves) +
+	this.stabilityWeight * (testBoard.WhiteSafeCount - testBoard.BlackSafeCount) + 
+	score;
+	
+// Check each line through the disc.
+// NOTE: A disc is outflankable if there is an empty square on
+// both sides OR if there is an empty square on one side and an
+// opponent or unsafe (outflankable) disc of the same color on the
+// other side.
+
+

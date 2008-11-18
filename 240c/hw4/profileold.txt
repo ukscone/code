@@ -1,0 +1,1202 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 40.95     16.17    16.17 84348779     0.00     0.00  Board::is_unstable(int, int)
+ 14.60     21.93     5.76 979364299     0.00     0.00  Board::get_at(int, int)
+ 13.93     27.43     5.50 736040353     0.00     0.00  Board::inside_board(int, int) const
+  6.03     29.82     2.38  1606730     0.00     0.00  Board::update_stable_discs()
+  3.86     31.34     1.52  5838532     0.00     0.00  Reversi::flip_vectors(int, int) const
+  2.58     32.36     1.02  1021740     0.00     0.00  Board::Board(Board const&)
+  2.18     33.22     0.86  1606730     0.00     0.00  Board::update_stable_counts()
+  2.10     34.05     0.83 58132220     0.00     0.00  Reversi::last_color() const
+  1.20     34.52     0.47       63     0.01     0.01  Board::board_refresh()
+  1.15     34.98     0.46 13689152     0.00     0.00  Reversi::is_legal(std::string const&) const
+  1.03     35.38     0.41 94608631     0.00     0.00  Reversi::inside_board(int, int) const
+  0.73     35.67     0.29   213893     0.00     0.00  Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const
+  0.51     35.88     0.20 13283400     0.00     0.00  std::__deque_buf_size(unsigned int)
+  0.46     36.05     0.18 17370693     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+  0.43     36.23     0.17  3167281     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&)
+  0.29     36.34     0.12 68225345     0.00     0.00  game::moves_completed() const
+  0.28     36.45     0.11  5838532     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector()
+  0.28     36.56     0.11  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int)
+  0.23     36.65     0.09  5838532     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base()
+  0.19     36.73     0.07  9633464     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&)
+  0.19     36.80     0.07  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base()
+  0.18     36.87     0.07  9005813     0.00     0.00  void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::__false_type)
+  0.18     36.94     0.07  9005813     0.00     0.00  void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*)
+  0.18     37.01     0.07  1021800     0.00     0.00  Reversi::make_move(std::string const&)
+  0.18     37.08     0.07   807908     0.00     0.00  Reversi::evaluate() const
+  0.16     37.15     0.07 10093125     0.00     0.00  Reversi::next_color() const
+  0.16     37.21     0.07  9005813     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int)
+  0.16     37.27     0.07  9005813     0.00     0.00  void std::_Destroy<std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >)
+  0.15     37.34     0.06  5838532     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&)
+  0.14     37.39     0.06 15340375     0.00     0.00  std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&)
+  0.14     37.45     0.06  1021800     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&)
+  0.13     37.49     0.05  5838532     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&)
+  0.13     37.55     0.05  5838532     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&)
+  0.13     37.59     0.05  4816732     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const
+  0.13     37.65     0.05  2043600     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>)
+  0.11     37.69     0.04 21178907     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&)
+  0.11     37.73     0.04  6334562     0.00     0.00  std::pair<int, int>* std::__uninitialized_copy_a<std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >)
+  0.11     37.78     0.04  6334562     0.00     0.00  std::pair<int, int>* std::__uninitialized_copy_aux<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::__false_type)
+  0.11     37.83     0.04  3065400     0.00     0.00  std::allocator<std::string>::allocator(std::allocator<std::string> const&)
+  0.10     37.87     0.04  9633464     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const
+  0.10     37.91     0.04  5838532     0.00     0.00  std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&)
+  0.10     37.95     0.04  4571234     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const
+  0.10     37.98     0.04  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int)
+  0.10     38.02     0.04  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_destroy_nodes(std::string**, std::string**)
+  0.10     38.06     0.04  2043600     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::~deque()
+  0.10     38.10     0.04  1606730     0.00     0.00  Board::set_at(int, int, Board::PIECE)
+  0.10     38.15     0.04   807908     0.00     0.00  game::last_mover() const
+  0.09     38.18     0.04  6334562     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const
+  0.09     38.22     0.04  6334562     0.00     0.00  std::pair<int, int>* std::uninitialized_copy<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*)
+  0.09     38.25     0.04  4816732     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const
+  0.08     38.28     0.03  6334562     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::max_size() const
+  0.08     38.31     0.03  5838532     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator()
+  0.08     38.34     0.03  5838532     0.00     0.00  std::allocator<std::pair<int, int> >::~allocator()
+  0.08     38.37     0.03  5838532     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl()
+  0.08     38.40     0.03  3223944     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::construct(std::pair<int, int>*, std::pair<int, int> const&)
+  0.08     38.43     0.03  3167281     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*)
+  0.08     38.46     0.03  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::_Deque_impl(std::allocator<std::string> const&)
+  0.08     38.49     0.03  2043600     0.00     0.00  std::_Deque_iterator<std::string, std::string const&, std::string const*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+  0.08     38.52     0.03  1854200     0.00     0.00  __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&)
+  0.08     38.55     0.03  1021871     0.00     0.00  Reversi::is_game_over() const
+  0.08     38.58     0.03      470     0.00     0.08  game::eval_with_lookahead(int, int)
+  0.06     38.60     0.03 27017439     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator()
+  0.06     38.63     0.03  4816732     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const
+  0.06     38.66     0.03  3167281     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int)
+  0.06     38.68     0.03  3167281     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int)
+  0.06     38.70     0.03  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::~_Deque_impl()
+  0.06     38.73     0.03  2043600     0.00     0.00  void std::__destroy_aux<std::string*>(std::string*, std::string*, std::__false_type)
+  0.06     38.76     0.03   807839     0.00     0.00  Board::get_stable_black()
+  0.06     38.78     0.03                             game::next_mover() const
+  0.05     38.80     0.02 21178907     0.00     0.00  std::allocator<std::pair<int, int> >::~allocator()
+  0.05     38.82     0.02 13689152     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.05     38.84     0.02  5109000     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*>::_S_buffer_size()
+  0.05     38.86     0.02  4816732     0.00     0.00  bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&)
+  0.05     38.88     0.02  4087200     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const
+  0.05     38.90     0.02  4087200     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*>::_M_set_node(std::string**)
+  0.05     38.92     0.02  3223944     0.00     0.00  std::pair<int, int>::pair(int const&, int const&)
+  0.05     38.94     0.02  3223944     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&)
+  0.05     38.96     0.02  3167281     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end()
+  0.05     38.98     0.02  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_create_nodes(std::string**, std::string**)
+  0.05     39.00     0.02  2043600     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_dispatch(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type)
+  0.05     39.02     0.02  1110696     0.00     0.00  std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::empty() const
+  0.05     39.04     0.02  1021800     0.00     0.00  std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue()
+  0.05     39.06     0.02  1021741     0.00     0.00  game::~game()
+  0.05     39.08     0.02  1021740     0.00     0.00  Reversi::Reversi(Reversi const&)
+  0.05     39.10     0.02  1021740     0.00     0.00  Reversi::clone() const
+  0.04     39.12     0.01  4087200     0.00     0.00  __gnu_cxx::new_allocator<std::string*>::~new_allocator()
+  0.04     39.13     0.01  1258001     0.00     0.00  void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&)
+  0.03     39.14     0.01 15340375     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator()
+  0.03     39.15     0.01  6130800     0.00     0.00  __gnu_cxx::new_allocator<std::string>::~new_allocator()
+  0.03     39.16     0.01  5109000     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator()
+  0.03     39.17     0.01  4481945     0.00     0.00  std::pair<int, int>::~pair()
+  0.03     39.18     0.01  4087200     0.00     0.00  std::allocator<std::string*>::allocator<std::string>(std::allocator<std::string> const&)
+  0.03     39.19     0.01  4087200     0.00     0.00  std::allocator<std::string*>::~allocator()
+  0.03     39.20     0.01  4087200     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator()
+  0.03     39.21     0.01  3167281     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&)
+  0.03     39.22     0.01  3167281     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() const
+  0.03     39.23     0.01  3167281     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::max_size() const
+  0.03     39.24     0.01  3065493     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::begin()
+  0.03     39.25     0.01  2043600     0.00     0.00  __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned int)
+  0.03     39.26     0.01  2043600     0.00     0.00  __gnu_cxx::new_allocator<std::string>::allocate(unsigned int, void const*)
+  0.03     39.27     0.01  2043600     0.00     0.00  std::allocator<std::string>::allocator(std::allocator<std::string> const&)
+  0.03     39.28     0.01  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int)
+  0.03     39.29     0.01  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_node(std::string*)
+  0.03     39.30     0.01  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int)
+  0.03     39.31     0.01  2043600     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::end()
+  0.03     39.32     0.01  2043600     0.00     0.00  unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  0.03     39.33     0.01  2043600     0.00     0.00  void std::_Destroy<std::string*>(std::string*, std::string*)
+  0.03     39.34     0.01  1110696     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::empty() const
+  0.03     39.35     0.01  1110696     0.00     0.00  bool std::operator==<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+  0.03     39.36     0.01  1021893     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::front()
+  0.03     39.37     0.01  1021800     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::end() const
+  0.03     39.38     0.01  1021800     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::begin() const
+  0.03     39.39     0.01  1021800     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::deque(std::allocator<std::string> const&)
+  0.03     39.40     0.01  1021800     0.00     0.00  std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::queue(std::deque<std::string, std::allocator<std::string> > const&)
+  0.03     39.41     0.01  1021800     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_a<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::string>(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string>)
+  0.03     39.42     0.01  1021800     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_aux<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type)
+  0.03     39.43     0.01  1021800     0.00     0.00  bool std::operator==<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&)
+  0.03     39.44     0.01  1021800     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*>::difference_type std::operator-<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+  0.03     39.45     0.01  1021741     0.00     0.00  game::game()
+  0.01     39.45     0.01  5838532     0.00     0.00  std::allocator<std::pair<int, int> >::allocator()
+  0.01     39.46     0.01  2043600     0.00     0.00  __gnu_cxx::new_allocator<std::string*>::deallocate(std::string**, unsigned int)
+  0.01     39.47     0.01  2043600     0.00     0.00  __gnu_cxx::new_allocator<std::string>::max_size() const
+  0.01     39.47     0.01  2043600     0.00     0.00  void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>)
+  0.01     39.48     0.01  1854200     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::push_back(std::string const&)
+  0.01     39.48     0.01  1854200     0.00     0.00  std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::push(std::string const&)
+  0.01     39.48     0.01  1606726     0.00     0.00  Reversi::increment_score(bool)
+  0.01     39.49     0.01  1021800     0.00     0.00  bool std::operator!=<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&)
+  0.00     39.49     0.00  6336145     0.00     0.00  operator new(unsigned int, void*)
+  0.00     39.49     0.00  5109000     0.00     0.00  __gnu_cxx::new_allocator<std::string>::new_allocator(__gnu_cxx::new_allocator<std::string> const&)
+  0.00     39.49     0.00  5109000     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const
+  0.00     39.49     0.00  4481945     0.00     0.00  void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*)
+  0.00     39.49     0.00  4087200     0.00     0.00  __gnu_cxx::new_allocator<std::string*>::new_allocator()
+  0.00     39.49     0.00  4087200     0.00     0.00  std::allocator<std::string>::~allocator()
+  0.00     39.49     0.00  2043600     0.00     0.00  __gnu_cxx::new_allocator<std::string*>::allocate(unsigned int, void const*)
+  0.00     39.49     0.00  2043600     0.00     0.00  __gnu_cxx::new_allocator<std::string*>::max_size() const
+  0.00     39.49     0.00  2043600     0.00     0.00  std::allocator<std::string>::~allocator()
+  0.00     39.49     0.00  2043600     0.00     0.00  std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_node()
+  0.00     39.49     0.00  2043600     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::_M_destroy_data(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string> const&)
+  0.00     39.49     0.00  1934158     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::operator[](unsigned int)
+  0.00     39.49     0.00  1021893     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*>::operator*() const
+  0.00     39.49     0.00  1021893     0.00     0.00  std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::front()
+  0.00     39.49     0.00  1021800     0.00     0.00  game::make_move(std::string const&)
+  0.00     39.49     0.00  1021800     0.00     0.00  __gnu_cxx::new_allocator<std::string>::new_allocator()
+  0.00     39.49     0.00  1021800     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::size() const
+  0.00     39.49     0.00  1021800     0.00     0.00  std::allocator<std::string>::allocator()
+  0.00     39.49     0.00  1021800     0.00     0.00  std::_Deque_iterator<std::string, std::string&, std::string*> std::uninitialized_copy<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>)
+  0.00     39.49     0.00  1021800     0.00     0.00  bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00     39.49     0.00  1021741     0.00     0.00  Board::~Board()
+  0.00     39.49     0.00  1021740     0.00     0.00  Reversi::~Reversi()
+  0.00     39.49     0.00   957457     0.00     0.00  void std::_Destroy<std::string>(std::string*)
+  0.00     39.49     0.00   896743     0.00     0.00  __gnu_cxx::new_allocator<std::string>::destroy(std::string*)
+  0.00     39.49     0.00   896743     0.00     0.00  std::deque<std::string, std::allocator<std::string> >::pop_front()
+  0.00     39.49     0.00   896743     0.00     0.00  std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::pop()
+  0.00     39.49     0.00   807839     0.00     0.00  Board::get_stable_white()
+  0.00     39.49     0.00      120     0.00     0.00  game::next_player() const
+  0.00     39.49     0.00       63     0.00     0.00  Reversi::display_msg(std::string const&, int, int) const
+  0.00     39.49     0.00       61     0.00     0.01  Reversi::display_status() const
+  0.00     39.49     0.00       61     0.00     0.00  Reversi::display_message(std::string const&) const
+  0.00     39.49     0.00       60     0.00     0.65  game::make_computer_move()
+  0.00     39.49     0.00        2     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00     39.49     0.00        1     0.00     0.00  global constructors keyed to _ZN4game13SEARCH_LEVELSE
+  0.00     39.49     0.00        1     0.00     0.00  global constructors keyed to main
+  0.00     39.49     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     39.49     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     39.49     0.00        1     0.00     0.00  game::set_player_types(game::PLAYER, game::PLAYER)
+  0.00     39.49     0.00        1     0.00    39.46  game::play()
+  0.00     39.49     0.00        1     0.00     0.00  Board::init_board()
+  0.00     39.49     0.00        1     0.00     0.00  Board::init_table()
+  0.00     39.49     0.00        1     0.00     0.00  Board::Board(int, int)
+  0.00     39.49     0.00        1     0.00     0.01  Reversi::init()
+  0.00     39.49     0.00        1     0.00     0.00  Reversi::Reversi()
+  0.00     39.49     0.00        1     0.00     0.00  Reversi::~Reversi()
+  0.00     39.49     0.00        1     0.00     0.00  game::winning() const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.03% of 39.49 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.9    0.00   39.47                 main [1]
+                0.00   39.46       1/1           game::play() [2]
+                0.00    0.01       1/1           Reversi::init() [137]
+                0.00    0.00       1/1           Reversi::~Reversi() [145]
+                0.00    0.00       1/1           Reversi::Reversi() [146]
+-----------------------------------------------
+                0.00   39.46       1/1           main [1]
+[2]     99.9    0.00   39.46       1         game::play() [2]
+                0.00   38.99      60/60          game::make_computer_move() [3]
+                0.00    0.47      61/61          Reversi::display_status() const [26]
+                0.00    0.00      61/1021871     Reversi::is_game_over() const [98]
+                0.00    0.00       1/1           game::winning() const [144]
+                0.00    0.00     120/120         game::next_player() const [170]
+-----------------------------------------------
+                0.00   38.99      60/60          game::play() [2]
+[3]     98.7    0.00   38.99      60         game::make_computer_move() [3]
+                0.03   38.94     470/470         game::eval_with_lookahead(int, int) [4]
+                0.00    0.02     530/1021800     Reversi::make_move(std::string const&) [5]
+                0.00    0.00      60/213893      Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const [11]
+                0.00    0.00     470/1021740     Reversi::clone() const [14]
+                0.00    0.00      60/1021800     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::queue(std::deque<std::string, std::allocator<std::string> > const&) [23]
+                0.00    0.00     590/1110696     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::empty() const [80]
+                0.00    0.00      60/1021800     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue() [30]
+                0.00    0.00      60/2043600     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+                0.00    0.00     623/1021893     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::front() [110]
+                0.00    0.00      60/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::allocator<std::string> const&) [31]
+                0.00    0.00     470/1021740     Reversi::~Reversi() [116]
+                0.00    0.00      60/4087200     std::allocator<std::string>::~allocator() [138]
+                0.00    0.00     470/896743      std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::pop() [168]
+                0.00    0.00      60/1021800     std::allocator<std::string>::allocator() [162]
+-----------------------------------------------
+                             1021270             game::eval_with_lookahead(int, int) [4]
+                0.03   38.94     470/470         game::make_computer_move() [3]
+[4]     98.7    0.03   38.94     470+1021270 game::eval_with_lookahead(int, int) [4]
+                0.07   31.13 1021270/1021800     Reversi::make_move(std::string const&) [5]
+                0.29    4.82  213833/213893      Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const [11]
+                0.02    1.05 1021270/1021740     Reversi::clone() const [14]
+                0.01    0.47 1021740/1021800     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::queue(std::deque<std::string, std::allocator<std::string> > const&) [23]
+                0.02    0.29 1021740/1021800     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue() [30]
+                0.02    0.27 1021740/2043600     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+                0.01    0.24 1021740/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::allocator<std::string> const&) [31]
+                0.07    0.05  807907/807908      Reversi::evaluate() const [45]
+                0.04    0.00  807907/807908      game::last_mover() const [81]
+                0.02    0.02 1110106/1110696     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::empty() const [80]
+                0.00    0.02 1021270/1021893     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::front() [110]
+                0.00    0.02 1021270/1021740     Reversi::~Reversi() [116]
+                0.01    0.00  213841/1021871     Reversi::is_game_over() const [98]
+                0.00    0.00 1021740/4087200     std::allocator<std::string>::~allocator() [138]
+                0.00    0.00 1021740/1021800     std::allocator<std::string>::allocator() [162]
+                0.00    0.00  896273/896743      std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::pop() [168]
+                             1021270             game::eval_with_lookahead(int, int) [4]
+-----------------------------------------------
+                0.00    0.02     530/1021800     game::make_computer_move() [3]
+                0.07   31.13 1021270/1021800     game::eval_with_lookahead(int, int) [4]
+[5]     79.1    0.07   31.15 1021800         Reversi::make_move(std::string const&) [5]
+                0.04   30.21 1606726/1606730     Board::set_at(int, int, Board::PIECE) [6]
+                0.27    0.47 1021800/5838532     Reversi::flip_vectors(int, int) const [13]
+                0.02    0.07 1021800/5838532     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+                0.01    0.01 1606726/1606726     Reversi::increment_score(bool) [117]
+                0.01    0.00  967079/58132220     Reversi::last_color() const [17]
+                0.01    0.00 1606726/10093125     Reversi::next_color() const [55]
+                0.01    0.00 1403953/4571234     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [77]
+                0.01    0.00  967079/979364299     Board::get_at(int, int) [9]
+                0.00    0.00 1934158/1934158     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::operator[](unsigned int) [158]
+                0.00    0.00 1021800/1021800     bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [163]
+                0.00    0.00 1021800/1021800     game::make_move(std::string const&) [160]
+                0.00    0.00      60/61          Reversi::display_message(std::string const&) const [172]
+-----------------------------------------------
+                0.00    0.00       4/1606730     Board::init_board() [142]
+                0.04   30.21 1606726/1606730     Reversi::make_move(std::string const&) [5]
+[6]     76.6    0.04   30.21 1606730         Board::set_at(int, int, Board::PIECE) [6]
+                2.38   26.93 1606730/1606730     Board::update_stable_discs() [7]
+                0.86    0.05 1606730/1606730     Board::update_stable_counts() [18]
+-----------------------------------------------
+                2.38   26.93 1606730/1606730     Board::set_at(int, int, Board::PIECE) [6]
+[7]     74.2    2.38   26.93 1606730         Board::update_stable_discs() [7]
+               16.17   10.02 84348779/84348779     Board::is_unstable(int, int) [8]
+                0.73    0.00 124858974/979364299     Board::get_at(int, int) [9]
+-----------------------------------------------
+               16.17   10.02 84348779/84348779     Board::update_stable_discs() [7]
+[8]     66.3   16.17   10.02 84348779         Board::is_unstable(int, int) [8]
+                5.50    0.00 736040353/736040353     Board::inside_board(int, int) const [10]
+                4.52    0.00 768088496/979364299     Board::get_at(int, int) [9]
+-----------------------------------------------
+                0.01    0.00  967079/979364299     Reversi::make_move(std::string const&) [5]
+                0.05    0.00 7715784/979364299     Board::update_stable_counts() [18]
+                0.08    0.00 13689152/979364299     Reversi::is_legal(std::string const&) const [12]
+                0.38    0.00 64044814/979364299     Reversi::flip_vectors(int, int) const [13]
+                0.73    0.00 124858974/979364299     Board::update_stable_discs() [7]
+                4.52    0.00 768088496/979364299     Board::is_unstable(int, int) [8]
+[9]     14.6    5.76    0.00 979364299         Board::get_at(int, int) [9]
+-----------------------------------------------
+                5.50    0.00 736040353/736040353     Board::is_unstable(int, int) [8]
+[10]    13.9    5.50    0.00 736040353         Board::inside_board(int, int) const [10]
+-----------------------------------------------
+                0.00    0.00      60/213893      game::make_computer_move() [3]
+                0.29    4.82  213833/213893      game::eval_with_lookahead(int, int) [4]
+[11]    12.9    0.29    4.82  213893         Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const [11]
+                0.46    4.32 13689152/13689152     Reversi::is_legal(std::string const&) const [12]
+                0.01    0.04 1854200/1854200     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::push(std::string const&) [79]
+-----------------------------------------------
+                0.46    4.32 13689152/13689152     Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const [11]
+[12]    12.1    0.46    4.32 13689152         Reversi::is_legal(std::string const&) const [12]
+                1.26    2.24 4816732/5838532     Reversi::flip_vectors(int, int) const [13]
+                0.09    0.33 4816732/5838532     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+                0.03    0.22 4816732/4816732     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [32]
+                0.08    0.00 13689152/979364299     Board::get_at(int, int) [9]
+                0.06    0.00 13689152/94608631     Reversi::inside_board(int, int) const [29]
+                0.02    0.00 13689152/13689152     bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [112]
+-----------------------------------------------
+                0.27    0.47 1021800/5838532     Reversi::make_move(std::string const&) [5]
+                1.26    2.24 4816732/5838532     Reversi::is_legal(std::string const&) const [12]
+[13]    10.7    1.52    2.71 5838532         Reversi::flip_vectors(int, int) const [13]
+                0.82    0.10 57165141/58132220     Reversi::last_color() const [17]
+                0.02    0.72 3223944/3223944     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [19]
+                0.38    0.00 64044814/979364299     Board::get_at(int, int) [9]
+                0.35    0.00 80919479/94608631     Reversi::inside_board(int, int) const [29]
+                0.05    0.16 5838532/5838532     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&) [37]
+                0.04    0.01 6879673/10093125     Reversi::next_color() const [55]
+                0.01    0.03 5838532/5838532     std::allocator<std::pair<int, int> >::allocator() [86]
+                0.02    0.00 3223944/3223944     std::pair<int, int>::pair(int const&, int const&) [113]
+                0.01    0.01 5838532/21178907     std::allocator<std::pair<int, int> >::~allocator() [82]
+-----------------------------------------------
+                0.00    0.00     470/1021740     game::make_computer_move() [3]
+                0.02    1.05 1021270/1021740     game::eval_with_lookahead(int, int) [4]
+[14]     2.7    0.02    1.05 1021740         Reversi::clone() const [14]
+                0.02    1.03 1021740/1021740     Reversi::Reversi(Reversi const&) [15]
+-----------------------------------------------
+                0.02    1.03 1021740/1021740     Reversi::clone() const [14]
+[15]     2.7    0.02    1.03 1021740         Reversi::Reversi(Reversi const&) [15]
+                1.02    0.00 1021740/1021740     Board::Board(Board const&) [16]
+                0.01    0.00 1021740/1021741     game::game() [136]
+-----------------------------------------------
+                1.02    0.00 1021740/1021740     Reversi::Reversi(Reversi const&) [15]
+[16]     2.6    1.02    0.00 1021740         Board::Board(Board const&) [16]
+-----------------------------------------------
+                0.01    0.00  967079/58132220     Reversi::make_move(std::string const&) [5]
+                0.82    0.10 57165141/58132220     Reversi::flip_vectors(int, int) const [13]
+[17]     2.3    0.83    0.10 58132220         Reversi::last_color() const [17]
+                0.10    0.00 58132220/68225345     game::moves_completed() const [46]
+-----------------------------------------------
+                0.86    0.05 1606730/1606730     Board::set_at(int, int, Board::PIECE) [6]
+[18]     2.3    0.86    0.05 1606730         Board::update_stable_counts() [18]
+                0.05    0.00 7715784/979364299     Board::get_at(int, int) [9]
+-----------------------------------------------
+                0.02    0.72 3223944/3223944     Reversi::flip_vectors(int, int) const [13]
+[19]     1.9    0.02    0.72 3223944         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [19]
+                0.17    0.52 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+                0.02    0.01 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [95]
+                0.00    0.00   56663/3223944     __gnu_cxx::new_allocator<std::pair<int, int> >::construct(std::pair<int, int>*, std::pair<int, int> const&) [94]
+-----------------------------------------------
+                0.17    0.52 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [19]
+[20]     1.8    0.17    0.52 3167281         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+                0.04    0.10 6334562/6334562     std::pair<int, int>* std::__uninitialized_copy_a<std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [43]
+                0.02    0.05 3167281/9005813     void std::_Destroy<std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [35]
+                0.03    0.04 3167281/3167281     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [59]
+                0.03    0.02 9501843/15340375     std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [53]
+                0.04    0.00 6334562/6334562     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [85]
+                0.01    0.03 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::max_size() const [87]
+                0.02    0.01 3167281/9005813     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [52]
+                0.03    0.00 3167281/3223944     __gnu_cxx::new_allocator<std::pair<int, int> >::construct(std::pair<int, int>*, std::pair<int, int> const&) [94]
+                0.03    0.00 3167281/4571234     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [77]
+                0.01    0.01 9501843/21178907     std::allocator<std::pair<int, int> >::~allocator() [82]
+                0.01    0.00 9501843/15340375     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() [122]
+-----------------------------------------------
+                0.00    0.00      60/2043600     game::make_computer_move() [3]
+                0.02    0.27 1021740/2043600     game::eval_with_lookahead(int, int) [4]
+                0.02    0.27 1021800/2043600     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue() [30]
+[21]     1.4    0.04    0.53 2043600         std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+                0.07    0.16 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base() [33]
+                0.00    0.23 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string> const&) [34]
+                0.01    0.02 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::end() [90]
+                0.01    0.02 2043600/3065493     std::deque<std::string, std::allocator<std::string> >::begin() [75]
+                0.00    0.00 2043600/5109000     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [124]
+-----------------------------------------------
+                0.02    0.07 1021800/5838532     Reversi::make_move(std::string const&) [5]
+                0.09    0.33 4816732/5838532     Reversi::is_legal(std::string const&) const [12]
+[22]     1.3    0.11    0.40 5838532         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+                0.09    0.12 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [36]
+                0.04    0.10 5838532/9005813     void std::_Destroy<std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [35]
+                0.02    0.01 5838532/15340375     std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [53]
+                0.01    0.01 5838532/21178907     std::allocator<std::pair<int, int> >::~allocator() [82]
+                0.00    0.00 5838532/15340375     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() [122]
+-----------------------------------------------
+                0.00    0.00      60/1021800     game::make_computer_move() [3]
+                0.01    0.47 1021740/1021800     game::eval_with_lookahead(int, int) [4]
+[23]     1.2    0.01    0.47 1021800         std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::queue(std::deque<std::string, std::allocator<std::string> > const&) [23]
+                0.06    0.41 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+-----------------------------------------------
+                0.01    0.00       1/63          Reversi::init() [137]
+                0.47    0.00      62/63          Reversi::display_status() const [26]
+[24]     1.2    0.47    0.00      63         Board::board_refresh() [24]
+-----------------------------------------------
+                0.01    0.23 1021800/2043600     std::deque<std::string, std::allocator<std::string> >::deque(std::allocator<std::string> const&) [31]
+                0.01    0.23 1021800/2043600     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+[25]     1.2    0.01    0.46 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int) [25]
+                0.11    0.30 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+                0.03    0.02 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::_Deque_impl(std::allocator<std::string> const&) [68]
+-----------------------------------------------
+                0.00    0.47      61/61          game::play() [2]
+[26]     1.2    0.00    0.47      61         Reversi::display_status() const [26]
+                0.47    0.00      62/63          Board::board_refresh() [24]
+                0.00    0.00      61/1021871     Reversi::is_game_over() const [98]
+                0.00    0.00       2/2           std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [173]
+                0.00    0.00       1/61          Reversi::display_message(std::string const&) const [172]
+-----------------------------------------------
+                0.06    0.41 1021800/1021800     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::queue(std::deque<std::string, std::allocator<std::string> > const&) [23]
+[27]     1.2    0.06    0.41 1021800         std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+                0.01    0.23 1021800/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int) [25]
+                0.01    0.06 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_a<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::string>(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string>) [61]
+                0.00    0.03 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::size() const [99]
+                0.01    0.01 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::end() const [106]
+                0.01    0.01 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::begin() const [107]
+                0.01    0.00 1021800/3065400     std::allocator<std::string>::allocator(std::allocator<std::string> const&) [73]
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+                0.00    0.00 1021800/5109000     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [124]
+                0.00    0.00 1021800/4087200     std::allocator<std::string>::~allocator() [138]
+                0.00    0.00 1021800/5109000     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [154]
+-----------------------------------------------
+                0.11    0.30 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int) [25]
+[28]     1.0    0.11    0.30 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+                0.02    0.08 4087200/4087200     std::_Deque_iterator<std::string, std::string&, std::string*>::_M_set_node(std::string**) [48]
+                0.04    0.03 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int) [60]
+                0.02    0.05 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_create_nodes(std::string**, std::string**) [62]
+                0.06    0.00 4087200/13283400     std::__deque_buf_size(unsigned int) [38]
+                0.01    0.00 2043600/2043600     unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [133]
+-----------------------------------------------
+                0.06    0.00 13689152/94608631     Reversi::is_legal(std::string const&) const [12]
+                0.35    0.00 80919479/94608631     Reversi::flip_vectors(int, int) const [13]
+[29]     1.0    0.41    0.00 94608631         Reversi::inside_board(int, int) const [29]
+-----------------------------------------------
+                0.00    0.00      60/1021800     game::make_computer_move() [3]
+                0.02    0.29 1021740/1021800     game::eval_with_lookahead(int, int) [4]
+[30]     0.8    0.02    0.29 1021800         std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue() [30]
+                0.02    0.27 1021800/2043600     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+-----------------------------------------------
+                0.00    0.00      60/1021800     game::make_computer_move() [3]
+                0.01    0.24 1021740/1021800     game::eval_with_lookahead(int, int) [4]
+[31]     0.6    0.01    0.24 1021800         std::deque<std::string, std::allocator<std::string> >::deque(std::allocator<std::string> const&) [31]
+                0.01    0.23 1021800/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int) [25]
+-----------------------------------------------
+                0.03    0.22 4816732/4816732     Reversi::is_legal(std::string const&) const [12]
+[32]     0.6    0.03    0.22 4816732         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [32]
+                0.05    0.04 4816732/4816732     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [54]
+                0.04    0.04 4816732/4816732     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [58]
+                0.02    0.04 4816732/4816732     bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [65]
+-----------------------------------------------
+                0.07    0.16 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+[33]     0.6    0.07    0.16 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base() [33]
+                0.04    0.05 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_destroy_nodes(std::string**, std::string**) [51]
+                0.01    0.03 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int) [74]
+                0.03    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::~_Deque_impl() [101]
+-----------------------------------------------
+                0.00    0.23 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+[34]     0.6    0.00    0.23 2043600         std::deque<std::string, std::allocator<std::string> >::_M_destroy_data(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string> const&) [34]
+                0.02    0.17 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_dispatch(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [39]
+                0.04    0.00 4087200/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.02    0.05 3167281/9005813     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+                0.04    0.10 5838532/9005813     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+[35]     0.5    0.07    0.15 9005813         void std::_Destroy<std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [35]
+                0.07    0.08 9005813/9005813     void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*) [42]
+-----------------------------------------------
+                0.09    0.12 5838532/5838532     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+[36]     0.5    0.09    0.12 5838532         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [36]
+                0.03    0.04 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [63]
+                0.04    0.02 5838532/9005813     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [52]
+-----------------------------------------------
+                0.05    0.16 5838532/5838532     Reversi::flip_vectors(int, int) const [13]
+[37]     0.5    0.05    0.16 5838532         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&) [37]
+                0.05    0.11 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [41]
+-----------------------------------------------
+                0.03    0.00 2043600/13283400     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_node() [70]
+                0.03    0.00 2043600/13283400     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_node(std::string*) [67]
+                0.06    0.00 4087200/13283400     std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+                0.08    0.00 5109000/13283400     std::_Deque_iterator<std::string, std::string&, std::string*>::_S_buffer_size() [49]
+[38]     0.5    0.20    0.00 13283400         std::__deque_buf_size(unsigned int) [38]
+-----------------------------------------------
+                0.02    0.17 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string> const&) [34]
+[39]     0.5    0.02    0.17 2043600         std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_dispatch(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [39]
+                0.05    0.08 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [44]
+                0.04    0.00 4087200/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_aux<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [83]
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*> std::uninitialized_copy<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [69]
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_a<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::string>(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string>) [61]
+                0.01    0.00 1021800/17370693     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+                0.02    0.00 2043600/17370693     std::deque<std::string, std::allocator<std::string> >::end() [90]
+                0.03    0.00 3065493/17370693     std::deque<std::string, std::allocator<std::string> >::begin() [75]
+                0.04    0.00 4087200/17370693     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_dispatch(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [39]
+                0.04    0.00 4087200/17370693     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string> const&) [34]
+[40]     0.5    0.18    0.00 17370693         std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.05    0.11 5838532/5838532     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&) [37]
+[41]     0.4    0.05    0.11 5838532         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [41]
+                0.06    0.05 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [47]
+-----------------------------------------------
+                0.07    0.08 9005813/9005813     void std::_Destroy<std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [35]
+[42]     0.4    0.07    0.08 9005813         void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*) [42]
+                0.07    0.01 9005813/9005813     void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::__false_type) [56]
+-----------------------------------------------
+                0.04    0.10 6334562/6334562     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[43]     0.4    0.04    0.10 6334562         std::pair<int, int>* std::__uninitialized_copy_a<std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [43]
+                0.04    0.06 6334562/6334562     std::pair<int, int>* std::uninitialized_copy<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*) [50]
+-----------------------------------------------
+                0.05    0.08 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_dispatch(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [39]
+[44]     0.3    0.05    0.08 2043600         std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [44]
+                0.01    0.04 2043600/2043600     void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>) [78]
+                0.03    0.00 2043600/3065400     std::allocator<std::string>::allocator(std::allocator<std::string> const&) [73]
+                0.00    0.00 2043600/5109000     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [124]
+                0.00    0.00 2043600/4087200     std::allocator<std::string>::~allocator() [138]
+-----------------------------------------------
+                0.00    0.00       1/807908      game::winning() const [144]
+                0.07    0.05  807907/807908      game::eval_with_lookahead(int, int) [4]
+[45]     0.3    0.07    0.05  807908         Reversi::evaluate() const [45]
+                0.03    0.00  807839/807839      Board::get_stable_black() [108]
+                0.02    0.00  807908/1021871     Reversi::is_game_over() const [98]
+                0.00    0.00  807839/807839      Board::get_stable_white() [169]
+-----------------------------------------------
+                0.02    0.00 10093125/68225345     Reversi::next_color() const [55]
+                0.10    0.00 58132220/68225345     Reversi::last_color() const [17]
+[46]     0.3    0.12    0.00 68225345         game::moves_completed() const [46]
+-----------------------------------------------
+                0.06    0.05 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [41]
+[47]     0.3    0.06    0.05 5838532         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [47]
+                0.04    0.01 5838532/5838532     std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [66]
+-----------------------------------------------
+                0.02    0.08 4087200/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+[48]     0.2    0.02    0.08 4087200         std::_Deque_iterator<std::string, std::string&, std::string*>::_M_set_node(std::string**) [48]
+                0.02    0.06 4087200/5109000     std::_Deque_iterator<std::string, std::string&, std::string*>::_S_buffer_size() [49]
+-----------------------------------------------
+                0.00    0.02 1021800/5109000     std::_Deque_iterator<std::string, std::string&, std::string*>::difference_type std::operator-<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&) [100]
+                0.02    0.06 4087200/5109000     std::_Deque_iterator<std::string, std::string&, std::string*>::_M_set_node(std::string**) [48]
+[49]     0.2    0.02    0.08 5109000         std::_Deque_iterator<std::string, std::string&, std::string*>::_S_buffer_size() [49]
+                0.08    0.00 5109000/13283400     std::__deque_buf_size(unsigned int) [38]
+-----------------------------------------------
+                0.04    0.06 6334562/6334562     std::pair<int, int>* std::__uninitialized_copy_a<std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >) [43]
+[50]     0.2    0.04    0.06 6334562         std::pair<int, int>* std::uninitialized_copy<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*) [50]
+                0.04    0.01 6334562/6334562     std::pair<int, int>* std::__uninitialized_copy_aux<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::__false_type) [64]
+-----------------------------------------------
+                0.04    0.05 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base() [33]
+[51]     0.2    0.04    0.05 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_destroy_nodes(std::string**, std::string**) [51]
+                0.01    0.04 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_node(std::string*) [67]
+-----------------------------------------------
+                0.02    0.01 3167281/9005813     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+                0.04    0.02 5838532/9005813     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [36]
+[52]     0.2    0.07    0.03 9005813         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [52]
+                0.03    0.00 3167281/3167281     __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int) [104]
+-----------------------------------------------
+                0.02    0.01 5838532/15340375     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+                0.03    0.02 9501843/15340375     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[53]     0.2    0.06    0.03 15340375         std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [53]
+                0.03    0.00 15340375/21178907     __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [71]
+-----------------------------------------------
+                0.05    0.04 4816732/4816732     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [32]
+[54]     0.2    0.05    0.04 4816732         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [54]
+                0.04    0.00 4816732/9633464     __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [57]
+-----------------------------------------------
+                0.01    0.00 1606726/10093125     Reversi::increment_score(bool) [117]
+                0.01    0.00 1606726/10093125     Reversi::make_move(std::string const&) [5]
+                0.04    0.01 6879673/10093125     Reversi::flip_vectors(int, int) const [13]
+[55]     0.2    0.07    0.02 10093125         Reversi::next_color() const [55]
+                0.02    0.00 10093125/68225345     game::moves_completed() const [46]
+-----------------------------------------------
+                0.07    0.01 9005813/9005813     void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*) [42]
+[56]     0.2    0.07    0.01 9005813         void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::__false_type) [56]
+                0.00    0.01 4481945/4481945     void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*) [126]
+-----------------------------------------------
+                0.04    0.00 4816732/9633464     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [58]
+                0.04    0.00 4816732/9633464     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [54]
+[57]     0.2    0.07    0.00 9633464         __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [57]
+-----------------------------------------------
+                0.04    0.04 4816732/4816732     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [32]
+[58]     0.2    0.04    0.04 4816732         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [58]
+                0.04    0.00 4816732/9633464     __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [57]
+-----------------------------------------------
+                0.03    0.04 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[59]     0.2    0.03    0.04 3167281         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [59]
+                0.03    0.01 3167281/3167281     __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [72]
+-----------------------------------------------
+                0.04    0.03 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+[60]     0.2    0.04    0.03 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int) [60]
+                0.01    0.01 2043600/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const [93]
+                0.01    0.01 2043600/4087200     std::allocator<std::string*>::~allocator() [103]
+                0.00    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string*>::allocate(unsigned int, void const*) [156]
+-----------------------------------------------
+                0.01    0.06 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+[61]     0.2    0.01    0.06 1021800         std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_a<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::string>(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string>) [61]
+                0.00    0.05 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*> std::uninitialized_copy<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [69]
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.02    0.05 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+[62]     0.2    0.02    0.05 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_create_nodes(std::string**, std::string**) [62]
+                0.00    0.05 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_node() [70]
+-----------------------------------------------
+                0.03    0.04 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [36]
+[63]     0.2    0.03    0.04 5838532         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [63]
+                0.03    0.01 5838532/5838532     std::allocator<std::pair<int, int> >::~allocator() [84]
+-----------------------------------------------
+                0.04    0.01 6334562/6334562     std::pair<int, int>* std::uninitialized_copy<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*) [50]
+[64]     0.2    0.04    0.01 6334562         std::pair<int, int>* std::__uninitialized_copy_aux<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::__false_type) [64]
+                0.01    0.00 1258001/1258001     void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [120]
+-----------------------------------------------
+                0.02    0.04 4816732/4816732     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [32]
+[65]     0.2    0.02    0.04 4816732         bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [65]
+                0.04    0.00 9633464/9633464     __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [76]
+-----------------------------------------------
+                0.04    0.01 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [47]
+[66]     0.1    0.04    0.01 5838532         std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [66]
+                0.01    0.00 5838532/21178907     __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [71]
+-----------------------------------------------
+                0.01    0.04 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_destroy_nodes(std::string**, std::string**) [51]
+[67]     0.1    0.01    0.04 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_node(std::string*) [67]
+                0.03    0.00 2043600/13283400     std::__deque_buf_size(unsigned int) [38]
+                0.01    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned int) [131]
+-----------------------------------------------
+                0.03    0.02 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int) [25]
+[68]     0.1    0.03    0.02 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::_Deque_impl(std::allocator<std::string> const&) [68]
+                0.01    0.00 4087200/4087200     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator() [128]
+                0.01    0.00 2043600/2043600     std::allocator<std::string>::allocator(std::allocator<std::string> const&) [132]
+-----------------------------------------------
+                0.00    0.05 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_a<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::string>(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string>) [61]
+[69]     0.1    0.00    0.05 1021800         std::_Deque_iterator<std::string, std::string&, std::string*> std::uninitialized_copy<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [69]
+                0.01    0.03 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_aux<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [83]
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.00    0.05 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_create_nodes(std::string**, std::string**) [62]
+[70]     0.1    0.00    0.05 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_node() [70]
+                0.03    0.00 2043600/13283400     std::__deque_buf_size(unsigned int) [38]
+                0.01    0.01 2043600/2043600     __gnu_cxx::new_allocator<std::string>::allocate(unsigned int, void const*) [119]
+-----------------------------------------------
+                0.01    0.00 5838532/21178907     std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [66]
+                0.03    0.00 15340375/21178907     std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [53]
+[71]     0.1    0.04    0.00 21178907         __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [71]
+-----------------------------------------------
+                0.03    0.01 3167281/3167281     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [59]
+[72]     0.1    0.03    0.01 3167281         __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [72]
+                0.01    0.00 3167281/6334562     __gnu_cxx::new_allocator<std::pair<int, int> >::max_size() const [91]
+-----------------------------------------------
+                0.01    0.00 1021800/3065400     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+                0.03    0.00 2043600/3065400     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [44]
+[73]     0.1    0.04    0.00 3065400         std::allocator<std::string>::allocator(std::allocator<std::string> const&) [73]
+                0.00    0.00 3065400/5109000     __gnu_cxx::new_allocator<std::string>::new_allocator(__gnu_cxx::new_allocator<std::string> const&) [153]
+-----------------------------------------------
+                0.01    0.03 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base() [33]
+[74]     0.1    0.01    0.03 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int) [74]
+                0.01    0.01 2043600/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const [93]
+                0.01    0.01 2043600/4087200     std::allocator<std::string*>::~allocator() [103]
+                0.01    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string*>::deallocate(std::string**, unsigned int) [139]
+-----------------------------------------------
+                0.00    0.01 1021893/3065493     std::deque<std::string, std::allocator<std::string> >::front() [111]
+                0.01    0.02 2043600/3065493     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+[75]     0.1    0.01    0.03 3065493         std::deque<std::string, std::allocator<std::string> >::begin() [75]
+                0.03    0.00 3065493/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.04    0.00 9633464/9633464     bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [65]
+[76]     0.1    0.04    0.00 9633464         __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [76]
+-----------------------------------------------
+                0.01    0.00 1403953/4571234     Reversi::make_move(std::string const&) [5]
+                0.03    0.00 3167281/4571234     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[77]     0.1    0.04    0.00 4571234         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [77]
+-----------------------------------------------
+                0.01    0.04 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [44]
+[78]     0.1    0.01    0.04 2043600         void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>) [78]
+                0.01    0.03 2043600/2043600     void std::_Destroy<std::string*>(std::string*, std::string*) [88]
+-----------------------------------------------
+                0.01    0.04 1854200/1854200     Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const [11]
+[79]     0.1    0.01    0.04 1854200         std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::push(std::string const&) [79]
+                0.01    0.03 1854200/1854200     std::deque<std::string, std::allocator<std::string> >::push_back(std::string const&) [89]
+-----------------------------------------------
+                0.00    0.00     590/1110696     game::make_computer_move() [3]
+                0.02    0.02 1110106/1110696     game::eval_with_lookahead(int, int) [4]
+[80]     0.1    0.02    0.02 1110696         std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::empty() const [80]
+                0.01    0.01 1110696/1110696     std::deque<std::string, std::allocator<std::string> >::empty() const [114]
+-----------------------------------------------
+                0.00    0.00       1/807908      game::winning() const [144]
+                0.04    0.00  807907/807908      game::eval_with_lookahead(int, int) [4]
+[81]     0.1    0.04    0.00  807908         game::last_mover() const [81]
+-----------------------------------------------
+                0.01    0.01 5838532/21178907     Reversi::flip_vectors(int, int) const [13]
+                0.01    0.01 5838532/21178907     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+                0.01    0.01 9501843/21178907     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[82]     0.1    0.02    0.02 21178907         std::allocator<std::pair<int, int> >::~allocator() [82]
+                0.02    0.00 21178907/27017439     __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [102]
+-----------------------------------------------
+                0.01    0.03 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*> std::uninitialized_copy<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [69]
+[83]     0.1    0.01    0.03 1021800         std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_aux<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [83]
+                0.01    0.01 1021800/1021800     bool std::operator!=<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&) [121]
+                0.01    0.00 1021800/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.03    0.01 5838532/5838532     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [63]
+[84]     0.1    0.03    0.01 5838532         std::allocator<std::pair<int, int> >::~allocator() [84]
+                0.01    0.00 5838532/27017439     __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [102]
+-----------------------------------------------
+                0.04    0.00 6334562/6334562     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[85]     0.1    0.04    0.00 6334562         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [85]
+-----------------------------------------------
+                0.01    0.03 5838532/5838532     Reversi::flip_vectors(int, int) const [13]
+[86]     0.1    0.01    0.03 5838532         std::allocator<std::pair<int, int> >::allocator() [86]
+                0.03    0.00 5838532/5838532     __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator() [92]
+-----------------------------------------------
+                0.01    0.03 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[87]     0.1    0.01    0.03 3167281         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::max_size() const [87]
+                0.01    0.00 3167281/6334562     __gnu_cxx::new_allocator<std::pair<int, int> >::max_size() const [91]
+                0.01    0.00 3167281/3167281     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() const [130]
+-----------------------------------------------
+                0.01    0.03 2043600/2043600     void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>) [78]
+[88]     0.1    0.01    0.03 2043600         void std::_Destroy<std::string*>(std::string*, std::string*) [88]
+                0.03    0.00 2043600/2043600     void std::__destroy_aux<std::string*>(std::string*, std::string*, std::__false_type) [105]
+-----------------------------------------------
+                0.01    0.03 1854200/1854200     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::push(std::string const&) [79]
+[89]     0.1    0.01    0.03 1854200         std::deque<std::string, std::allocator<std::string> >::push_back(std::string const&) [89]
+                0.03    0.00 1854200/1854200     __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [97]
+-----------------------------------------------
+                0.01    0.02 2043600/2043600     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+[90]     0.1    0.01    0.02 2043600         std::deque<std::string, std::allocator<std::string> >::end() [90]
+                0.02    0.00 2043600/17370693     std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [40]
+-----------------------------------------------
+                0.01    0.00 3167281/6334562     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::max_size() const [87]
+                0.01    0.00 3167281/6334562     __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [72]
+[91]     0.1    0.03    0.00 6334562         __gnu_cxx::new_allocator<std::pair<int, int> >::max_size() const [91]
+-----------------------------------------------
+                0.03    0.00 5838532/5838532     std::allocator<std::pair<int, int> >::allocator() [86]
+[92]     0.1    0.03    0.00 5838532         __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator() [92]
+-----------------------------------------------
+                0.01    0.01 2043600/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int) [60]
+                0.01    0.01 2043600/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int) [74]
+[93]     0.1    0.02    0.01 4087200         std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const [93]
+                0.01    0.00 4087200/4087200     std::allocator<std::string*>::allocator<std::string>(std::allocator<std::string> const&) [127]
+                0.00    0.00 4087200/5109000     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [154]
+-----------------------------------------------
+                0.00    0.00   56663/3223944     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [19]
+                0.03    0.00 3167281/3223944     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[94]     0.1    0.03    0.00 3223944         __gnu_cxx::new_allocator<std::pair<int, int> >::construct(std::pair<int, int>*, std::pair<int, int> const&) [94]
+                0.00    0.00 3223944/6336145     operator new(unsigned int, void*) [152]
+-----------------------------------------------
+                0.02    0.01 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [19]
+[95]     0.1    0.02    0.01 3167281         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [95]
+                0.01    0.00 3167281/3167281     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [129]
+-----------------------------------------------
+                0.01    0.00 1021800/2043600     std::deque<std::string, std::allocator<std::string> >::end() const [106]
+                0.01    0.00 1021800/2043600     std::deque<std::string, std::allocator<std::string> >::begin() const [107]
+[96]     0.1    0.03    0.00 2043600         std::_Deque_iterator<std::string, std::string const&, std::string const*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [96]
+-----------------------------------------------
+                0.03    0.00 1854200/1854200     std::deque<std::string, std::allocator<std::string> >::push_back(std::string const&) [89]
+[97]     0.1    0.03    0.00 1854200         __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [97]
+                0.00    0.00 1854200/6336145     operator new(unsigned int, void*) [152]
+-----------------------------------------------
+                0.00    0.00      61/1021871     Reversi::display_status() const [26]
+                0.00    0.00      61/1021871     game::play() [2]
+                0.01    0.00  213841/1021871     game::eval_with_lookahead(int, int) [4]
+                0.02    0.00  807908/1021871     Reversi::evaluate() const [45]
+[98]     0.1    0.03    0.00 1021871         Reversi::is_game_over() const [98]
+-----------------------------------------------
+                0.00    0.03 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+[99]     0.1    0.00    0.03 1021800         std::deque<std::string, std::allocator<std::string> >::size() const [99]
+                0.01    0.02 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*>::difference_type std::operator-<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&) [100]
+-----------------------------------------------
+                0.01    0.02 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::size() const [99]
+[100]    0.1    0.01    0.02 1021800         std::_Deque_iterator<std::string, std::string&, std::string*>::difference_type std::operator-<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&) [100]
+                0.00    0.02 1021800/5109000     std::_Deque_iterator<std::string, std::string&, std::string*>::_S_buffer_size() [49]
+-----------------------------------------------
+                0.03    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base() [33]
+[101]    0.1    0.03    0.00 2043600         std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::~_Deque_impl() [101]
+                0.00    0.00 2043600/2043600     std::allocator<std::string>::~allocator() [141]
+-----------------------------------------------
+                0.01    0.00 5838532/27017439     std::allocator<std::pair<int, int> >::~allocator() [84]
+                0.02    0.00 21178907/27017439     std::allocator<std::pair<int, int> >::~allocator() [82]
+[102]    0.1    0.03    0.00 27017439         __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [102]
+-----------------------------------------------
+                0.01    0.01 2043600/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int) [60]
+                0.01    0.01 2043600/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int) [74]
+[103]    0.1    0.01    0.01 4087200         std::allocator<std::string*>::~allocator() [103]
+                0.01    0.00 4087200/4087200     __gnu_cxx::new_allocator<std::string*>::~new_allocator() [118]
+-----------------------------------------------
+                0.03    0.00 3167281/3167281     std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [52]
+[104]    0.1    0.03    0.00 3167281         __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int) [104]
+-----------------------------------------------
+                0.03    0.00 2043600/2043600     void std::_Destroy<std::string*>(std::string*, std::string*) [88]
+[105]    0.1    0.03    0.00 2043600         void std::__destroy_aux<std::string*>(std::string*, std::string*, std::__false_type) [105]
+                0.00    0.00  957457/957457      void std::_Destroy<std::string>(std::string*) [165]
+-----------------------------------------------
+                0.01    0.01 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+[106]    0.1    0.01    0.01 1021800         std::deque<std::string, std::allocator<std::string> >::end() const [106]
+                0.01    0.00 1021800/2043600     std::_Deque_iterator<std::string, std::string const&, std::string const*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [96]
+-----------------------------------------------
+                0.01    0.01 1021800/1021800     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+[107]    0.1    0.01    0.01 1021800         std::deque<std::string, std::allocator<std::string> >::begin() const [107]
+                0.01    0.00 1021800/2043600     std::_Deque_iterator<std::string, std::string const&, std::string const*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&) [96]
+-----------------------------------------------
+                0.03    0.00  807839/807839      Reversi::evaluate() const [45]
+[108]    0.1    0.03    0.00  807839         Board::get_stable_black() [108]
+-----------------------------------------------
+                                                 <spontaneous>
+[109]    0.1    0.03    0.00                 game::next_mover() const [109]
+-----------------------------------------------
+                0.00    0.00     623/1021893     game::make_computer_move() [3]
+                0.00    0.02 1021270/1021893     game::eval_with_lookahead(int, int) [4]
+[110]    0.1    0.00    0.02 1021893         std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::front() [110]
+                0.01    0.01 1021893/1021893     std::deque<std::string, std::allocator<std::string> >::front() [111]
+-----------------------------------------------
+                0.01    0.01 1021893/1021893     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::front() [110]
+[111]    0.1    0.01    0.01 1021893         std::deque<std::string, std::allocator<std::string> >::front() [111]
+                0.00    0.01 1021893/3065493     std::deque<std::string, std::allocator<std::string> >::begin() [75]
+                0.00    0.00 1021893/1021893     std::_Deque_iterator<std::string, std::string&, std::string*>::operator*() const [159]
+-----------------------------------------------
+                0.02    0.00 13689152/13689152     Reversi::is_legal(std::string const&) const [12]
+[112]    0.1    0.02    0.00 13689152         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [112]
+-----------------------------------------------
+                0.02    0.00 3223944/3223944     Reversi::flip_vectors(int, int) const [13]
+[113]    0.1    0.02    0.00 3223944         std::pair<int, int>::pair(int const&, int const&) [113]
+-----------------------------------------------
+                0.01    0.01 1110696/1110696     std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::empty() const [80]
+[114]    0.1    0.01    0.01 1110696         std::deque<std::string, std::allocator<std::string> >::empty() const [114]
+                0.01    0.00 1110696/1110696     bool std::operator==<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&) [134]
+-----------------------------------------------
+                0.00    0.00       1/1021741     Reversi::~Reversi() [145]
+                0.02    0.00 1021740/1021741     Reversi::~Reversi() [116]
+[115]    0.1    0.02    0.00 1021741         game::~game() [115]
+-----------------------------------------------
+                0.00    0.00     470/1021740     game::make_computer_move() [3]
+                0.00    0.02 1021270/1021740     game::eval_with_lookahead(int, int) [4]
+[116]    0.1    0.00    0.02 1021740         Reversi::~Reversi() [116]
+                0.02    0.00 1021740/1021741     game::~game() [115]
+                0.00    0.00 1021740/1021741     Board::~Board() [164]
+-----------------------------------------------
+                0.01    0.01 1606726/1606726     Reversi::make_move(std::string const&) [5]
+[117]    0.0    0.01    0.01 1606726         Reversi::increment_score(bool) [117]
+                0.01    0.00 1606726/10093125     Reversi::next_color() const [55]
+-----------------------------------------------
+                0.01    0.00 4087200/4087200     std::allocator<std::string*>::~allocator() [103]
+[118]    0.0    0.01    0.00 4087200         __gnu_cxx::new_allocator<std::string*>::~new_allocator() [118]
+-----------------------------------------------
+                0.01    0.01 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_node() [70]
+[119]    0.0    0.01    0.01 2043600         __gnu_cxx::new_allocator<std::string>::allocate(unsigned int, void const*) [119]
+                0.01    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string>::max_size() const [140]
+-----------------------------------------------
+                0.01    0.00 1258001/1258001     std::pair<int, int>* std::__uninitialized_copy_aux<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::__false_type) [64]
+[120]    0.0    0.01    0.00 1258001         void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [120]
+                0.00    0.00 1258001/6336145     operator new(unsigned int, void*) [152]
+-----------------------------------------------
+                0.01    0.01 1021800/1021800     std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_aux<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type) [83]
+[121]    0.0    0.01    0.01 1021800         bool std::operator!=<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&) [121]
+                0.01    0.00 1021800/1021800     bool std::operator==<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&) [135]
+-----------------------------------------------
+                0.00    0.00 5838532/15340375     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [22]
+                0.01    0.00 9501843/15340375     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [20]
+[122]    0.0    0.01    0.00 15340375         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() [122]
+-----------------------------------------------
+                0.00    0.00 2043600/6130800     std::allocator<std::string>::~allocator() [141]
+                0.01    0.00 4087200/6130800     std::allocator<std::string>::~allocator() [138]
+[123]    0.0    0.01    0.00 6130800         __gnu_cxx::new_allocator<std::string>::~new_allocator() [123]
+-----------------------------------------------
+                0.00    0.00 1021800/5109000     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+                0.00    0.00 2043600/5109000     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [44]
+                0.00    0.00 2043600/5109000     std::deque<std::string, std::allocator<std::string> >::~deque() [21]
+[124]    0.0    0.01    0.00 5109000         std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [124]
+-----------------------------------------------
+                0.01    0.00 4481945/4481945     void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*) [126]
+[125]    0.0    0.01    0.00 4481945         std::pair<int, int>::~pair() [125]
+-----------------------------------------------
+                0.00    0.01 4481945/4481945     void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::__false_type) [56]
+[126]    0.0    0.00    0.01 4481945         void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*) [126]
+                0.01    0.00 4481945/4481945     std::pair<int, int>::~pair() [125]
+-----------------------------------------------
+                0.01    0.00 4087200/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const [93]
+[127]    0.0    0.01    0.00 4087200         std::allocator<std::string*>::allocator<std::string>(std::allocator<std::string> const&) [127]
+                0.00    0.00 4087200/4087200     __gnu_cxx::new_allocator<std::string*>::new_allocator() [155]
+-----------------------------------------------
+                0.01    0.00 4087200/4087200     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::_Deque_impl(std::allocator<std::string> const&) [68]
+[128]    0.0    0.01    0.00 4087200         std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator() [128]
+-----------------------------------------------
+                0.01    0.00 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [95]
+[129]    0.0    0.01    0.00 3167281         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [129]
+-----------------------------------------------
+                0.01    0.00 3167281/3167281     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::max_size() const [87]
+[130]    0.0    0.01    0.00 3167281         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() const [130]
+-----------------------------------------------
+                0.01    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_node(std::string*) [67]
+[131]    0.0    0.01    0.00 2043600         __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned int) [131]
+-----------------------------------------------
+                0.01    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::_Deque_impl(std::allocator<std::string> const&) [68]
+[132]    0.0    0.01    0.00 2043600         std::allocator<std::string>::allocator(std::allocator<std::string> const&) [132]
+                0.00    0.00 2043600/5109000     __gnu_cxx::new_allocator<std::string>::new_allocator(__gnu_cxx::new_allocator<std::string> const&) [153]
+-----------------------------------------------
+                0.01    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [28]
+[133]    0.0    0.01    0.00 2043600         unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [133]
+-----------------------------------------------
+                0.01    0.00 1110696/1110696     std::deque<std::string, std::allocator<std::string> >::empty() const [114]
+[134]    0.0    0.01    0.00 1110696         bool std::operator==<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&) [134]
+-----------------------------------------------
+                0.01    0.00 1021800/1021800     bool std::operator!=<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&) [121]
+[135]    0.0    0.01    0.00 1021800         bool std::operator==<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&) [135]
+-----------------------------------------------
+                0.00    0.00       1/1021741     Reversi::Reversi() [146]
+                0.01    0.00 1021740/1021741     Reversi::Reversi(Reversi const&) [15]
+[136]    0.0    0.01    0.00 1021741         game::game() [136]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[137]    0.0    0.00    0.01       1         Reversi::init() [137]
+                0.01    0.00       1/63          Board::board_refresh() [24]
+                0.00    0.00       1/1           Board::Board(int, int) [143]
+                0.00    0.00       2/63          Reversi::display_msg(std::string const&, int, int) const [171]
+                0.00    0.00       1/1           game::set_player_types(game::PLAYER, game::PLAYER) [178]
+-----------------------------------------------
+                0.00    0.00      60/4087200     game::make_computer_move() [3]
+                0.00    0.00 1021740/4087200     game::eval_with_lookahead(int, int) [4]
+                0.00    0.00 1021800/4087200     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+                0.00    0.00 2043600/4087200     std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>) [44]
+[138]    0.0    0.00    0.01 4087200         std::allocator<std::string>::~allocator() [138]
+                0.01    0.00 4087200/6130800     __gnu_cxx::new_allocator<std::string>::~new_allocator() [123]
+-----------------------------------------------
+                0.01    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int) [74]
+[139]    0.0    0.01    0.00 2043600         __gnu_cxx::new_allocator<std::string*>::deallocate(std::string**, unsigned int) [139]
+-----------------------------------------------
+                0.01    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string>::allocate(unsigned int, void const*) [119]
+[140]    0.0    0.01    0.00 2043600         __gnu_cxx::new_allocator<std::string>::max_size() const [140]
+-----------------------------------------------
+                0.00    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::~_Deque_impl() [101]
+[141]    0.0    0.00    0.00 2043600         std::allocator<std::string>::~allocator() [141]
+                0.00    0.00 2043600/6130800     __gnu_cxx::new_allocator<std::string>::~new_allocator() [123]
+-----------------------------------------------
+                0.00    0.00       1/1           Board::Board(int, int) [143]
+[142]    0.0    0.00    0.00       1         Board::init_board() [142]
+                0.00    0.00       4/1606730     Board::set_at(int, int, Board::PIECE) [6]
+-----------------------------------------------
+                0.00    0.00       1/1           Reversi::init() [137]
+[143]    0.0    0.00    0.00       1         Board::Board(int, int) [143]
+                0.00    0.00       1/1           Board::init_board() [142]
+                0.00    0.00       1/1           Board::init_table() [179]
+-----------------------------------------------
+                0.00    0.00       1/1           game::play() [2]
+[144]    0.0    0.00    0.00       1         game::winning() const [144]
+                0.00    0.00       1/807908      Reversi::evaluate() const [45]
+                0.00    0.00       1/807908      game::last_mover() const [81]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[145]    0.0    0.00    0.00       1         Reversi::~Reversi() [145]
+                0.00    0.00       1/1021741     game::~game() [115]
+                0.00    0.00       1/1021741     Board::~Board() [164]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[146]    0.0    0.00    0.00       1         Reversi::Reversi() [146]
+                0.00    0.00       1/1021741     game::game() [136]
+-----------------------------------------------
+                0.00    0.00 1258001/6336145     void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [120]
+                0.00    0.00 1854200/6336145     __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [97]
+                0.00    0.00 3223944/6336145     __gnu_cxx::new_allocator<std::pair<int, int> >::construct(std::pair<int, int>*, std::pair<int, int> const&) [94]
+[152]    0.0    0.00    0.00 6336145         operator new(unsigned int, void*) [152]
+-----------------------------------------------
+                0.00    0.00 2043600/5109000     std::allocator<std::string>::allocator(std::allocator<std::string> const&) [132]
+                0.00    0.00 3065400/5109000     std::allocator<std::string>::allocator(std::allocator<std::string> const&) [73]
+[153]    0.0    0.00    0.00 5109000         __gnu_cxx::new_allocator<std::string>::new_allocator(__gnu_cxx::new_allocator<std::string> const&) [153]
+-----------------------------------------------
+                0.00    0.00 1021800/5109000     std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&) [27]
+                0.00    0.00 4087200/5109000     std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const [93]
+[154]    0.0    0.00    0.00 5109000         std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [154]
+-----------------------------------------------
+                0.00    0.00 4087200/4087200     std::allocator<std::string*>::allocator<std::string>(std::allocator<std::string> const&) [127]
+[155]    0.0    0.00    0.00 4087200         __gnu_cxx::new_allocator<std::string*>::new_allocator() [155]
+-----------------------------------------------
+                0.00    0.00 2043600/2043600     std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int) [60]
+[156]    0.0    0.00    0.00 2043600         __gnu_cxx::new_allocator<std::string*>::allocate(unsigned int, void const*) [156]
+                0.00    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string*>::max_size() const [157]
+-----------------------------------------------
+                0.00    0.00 2043600/2043600     __gnu_cxx::new_allocator<std::string*>::allocate(unsigned int, void const*) [156]
+[157]    0.0    0.00    0.00 2043600         __gnu_cxx::new_allocator<std::string*>::max_size() const [157]
+-----------------------------------------------
+                0.00    0.00 1934158/1934158     Reversi::make_move(std::string const&) [5]
+[158]    0.0    0.00    0.00 1934158         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::operator[](unsigned int) [158]
+-----------------------------------------------
+                0.00    0.00 1021893/1021893     std::deque<std::string, std::allocator<std::string> >::front() [111]
+[159]    0.0    0.00    0.00 1021893         std::_Deque_iterator<std::string, std::string&, std::string*>::operator*() const [159]
+-----------------------------------------------
+                0.00    0.00 1021800/1021800     Reversi::make_move(std::string const&) [5]
+[160]    0.0    0.00    0.00 1021800         game::make_move(std::string const&) [160]
+-----------------------------------------------
+                0.00    0.00 1021800/1021800     std::allocator<std::string>::allocator() [162]
+[161]    0.0    0.00    0.00 1021800         __gnu_cxx::new_allocator<std::string>::new_allocator() [161]
+-----------------------------------------------
+                0.00    0.00      60/1021800     game::make_computer_move() [3]
+                0.00    0.00 1021740/1021800     game::eval_with_lookahead(int, int) [4]
+[162]    0.0    0.00    0.00 1021800         std::allocator<std::string>::allocator() [162]
+                0.00    0.00 1021800/1021800     __gnu_cxx::new_allocator<std::string>::new_allocator() [161]
+-----------------------------------------------
+                0.00    0.00 1021800/1021800     Reversi::make_move(std::string const&) [5]
+[163]    0.0    0.00    0.00 1021800         bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [163]
+-----------------------------------------------
+                0.00    0.00       1/1021741     Reversi::~Reversi() [145]
+                0.00    0.00 1021740/1021741     Reversi::~Reversi() [116]
+[164]    0.0    0.00    0.00 1021741         Board::~Board() [164]
+-----------------------------------------------
+                0.00    0.00  957457/957457      void std::__destroy_aux<std::string*>(std::string*, std::string*, std::__false_type) [105]
+[165]    0.0    0.00    0.00  957457         void std::_Destroy<std::string>(std::string*) [165]
+-----------------------------------------------
+                0.00    0.00  896743/896743      std::deque<std::string, std::allocator<std::string> >::pop_front() [167]
+[166]    0.0    0.00    0.00  896743         __gnu_cxx::new_allocator<std::string>::destroy(std::string*) [166]
+-----------------------------------------------
+                0.00    0.00  896743/896743      std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::pop() [168]
+[167]    0.0    0.00    0.00  896743         std::deque<std::string, std::allocator<std::string> >::pop_front() [167]
+                0.00    0.00  896743/896743      __gnu_cxx::new_allocator<std::string>::destroy(std::string*) [166]
+-----------------------------------------------
+                0.00    0.00     470/896743      game::make_computer_move() [3]
+                0.00    0.00  896273/896743      game::eval_with_lookahead(int, int) [4]
+[168]    0.0    0.00    0.00  896743         std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::pop() [168]
+                0.00    0.00  896743/896743      std::deque<std::string, std::allocator<std::string> >::pop_front() [167]
+-----------------------------------------------
+                0.00    0.00  807839/807839      Reversi::evaluate() const [45]
+[169]    0.0    0.00    0.00  807839         Board::get_stable_white() [169]
+-----------------------------------------------
+                0.00    0.00     120/120         game::play() [2]
+[170]    0.0    0.00    0.00     120         game::next_player() const [170]
+-----------------------------------------------
+                0.00    0.00       2/63          Reversi::init() [137]
+                0.00    0.00      61/63          Reversi::display_message(std::string const&) const [172]
+[171]    0.0    0.00    0.00      63         Reversi::display_msg(std::string const&, int, int) const [171]
+-----------------------------------------------
+                0.00    0.00       1/61          Reversi::display_status() const [26]
+                0.00    0.00      60/61          Reversi::make_move(std::string const&) [5]
+[172]    0.0    0.00    0.00      61         Reversi::display_message(std::string const&) const [172]
+                0.00    0.00      61/63          Reversi::display_msg(std::string const&, int, int) const [171]
+-----------------------------------------------
+                0.00    0.00       2/2           Reversi::display_status() const [26]
+[173]    0.0    0.00    0.00       2         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [173]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [244]
+[174]    0.0    0.00    0.00       1         global constructors keyed to _ZN4game13SEARCH_LEVELSE [174]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [177]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [244]
+[175]    0.0    0.00    0.00       1         global constructors keyed to main [175]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [176]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to main [175]
+[176]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [176]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN4game13SEARCH_LEVELSE [174]
+[177]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [177]
+-----------------------------------------------
+                0.00    0.00       1/1           Reversi::init() [137]
+[178]    0.0    0.00    0.00       1         game::set_player_types(game::PLAYER, game::PLAYER) [178]
+-----------------------------------------------
+                0.00    0.00       1/1           Board::Board(int, int) [143]
+[179]    0.0    0.00    0.00       1         Board::init_table() [179]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+ [174] global constructors keyed to _ZN4game13SEARCH_LEVELSE (game.cc) [55] Reversi::next_color() const [122] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator()
+ [175] global constructors keyed to main (main.cc) [171] Reversi::display_msg(std::string const&, int, int) const [41] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&)
+ [176] __static_initialization_and_destruction_0(int, int) (main.cc) [13] Reversi::flip_vectors(int, int) const [36] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base()
+ [177] __static_initialization_and_destruction_0(int, int) (game.cc) [29] Reversi::inside_board(int, int) const [96] std::_Deque_iterator<std::string, std::string const&, std::string const*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+ [178] game::set_player_types(game::PLAYER, game::PLAYER) [98] Reversi::is_game_over() const [48] std::_Deque_iterator<std::string, std::string&, std::string*>::_M_set_node(std::string**)
+   [3] game::make_computer_move() [11] Reversi::compute_moves(std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >&) const [49] std::_Deque_iterator<std::string, std::string&, std::string*>::_S_buffer_size()
+   [4] game::eval_with_lookahead(int, int) [26] Reversi::display_status() const [40] std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator(std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+   [2] game::play()          [172] Reversi::display_message(std::string const&) const [128] std::_Deque_iterator<std::string, std::string&, std::string*>::_Deque_iterator()
+ [160] game::make_move(std::string const&) [14] Reversi::clone() const [113] std::pair<int, int>::pair(int const&, int const&)
+ [136] game::game()           [45] Reversi::evaluate() const [125] std::pair<int, int>::~pair()
+ [115] game::~game()          [12] Reversi::is_legal(std::string const&) const [34] std::deque<std::string, std::allocator<std::string> >::_M_destroy_data(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string> const&)
+ [142] Board::init_board()   [157] __gnu_cxx::new_allocator<std::string*>::max_size() const [44] std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>)
+ [179] Board::init_table()   [140] __gnu_cxx::new_allocator<std::string>::max_size() const [39] std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_dispatch(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type)
+   [8] Board::is_unstable(int, int) [91] __gnu_cxx::new_allocator<std::pair<int, int> >::max_size() const [90] std::deque<std::string, std::allocator<std::string> >::end()
+  [24] Board::board_refresh() [76] __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [75] std::deque<std::string, std::allocator<std::string> >::begin()
+ [108] Board::get_stable_black() [85] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [111] std::deque<std::string, std::allocator<std::string> >::front()
+ [169] Board::get_stable_white() [154] std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [167] std::deque<std::string, std::allocator<std::string> >::pop_front()
+   [7] Board::update_stable_discs() [93] std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_map_allocator() const [89] std::deque<std::string, std::allocator<std::string> >::push_back(std::string const&)
+  [18] Board::update_stable_counts() [130] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_get_Tp_allocator() const [31] std::deque<std::string, std::allocator<std::string> >::deque(std::allocator<std::string> const&)
+   [9] Board::get_at(int, int) [159] std::_Deque_iterator<std::string, std::string&, std::string*>::operator*() const [27] std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&)
+   [6] Board::set_at(int, int, Board::PIECE) [106] std::deque<std::string, std::allocator<std::string> >::end() const [21] std::deque<std::string, std::allocator<std::string> >::~deque()
+  [16] Board::Board(Board const&) [99] std::deque<std::string, std::allocator<std::string> >::size() const [168] std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::pop()
+ [143] Board::Board(int, int) [107] std::deque<std::string, std::allocator<std::string> >::begin() const [79] std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::push(std::string const&)
+ [164] Board::~Board()       [114] std::deque<std::string, std::allocator<std::string> >::empty() const [110] std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::front()
+ [117] Reversi::increment_score(bool) [80] std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::empty() const [23] std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::queue(std::deque<std::string, std::allocator<std::string> > const&)
+ [137] Reversi::init()        [58] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [30] std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue()
+   [5] Reversi::make_move(std::string const&) [77] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [20] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&)
+  [15] Reversi::Reversi(Reversi const&) [54] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [95] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end()
+ [146] Reversi::Reversi()     [32] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [19] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&)
+ [116] Reversi::~Reversi()    [87] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::max_size() const [37] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&)
+ [145] Reversi::~Reversi()   [127] std::allocator<std::string*>::allocator<std::string>(std::allocator<std::string> const&) [22] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector()
+ [139] __gnu_cxx::new_allocator<std::string*>::deallocate(std::string**, unsigned int) [103] std::allocator<std::string*>::~allocator() [158] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::operator[](unsigned int)
+ [156] __gnu_cxx::new_allocator<std::string*>::allocate(unsigned int, void const*) [73] std::allocator<std::string>::allocator(std::allocator<std::string> const&) [120] void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&)
+ [155] __gnu_cxx::new_allocator<std::string*>::new_allocator() [162] std::allocator<std::string>::allocator() [105] void std::__destroy_aux<std::string*>(std::string*, std::string*, std::__false_type)
+ [118] __gnu_cxx::new_allocator<std::string*>::~new_allocator() [132] std::allocator<std::string>::allocator(std::allocator<std::string> const&) [56] void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::__false_type)
+ [131] __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned int) [138] std::allocator<std::string>::~allocator() [38] std::__deque_buf_size(unsigned int)
+ [166] __gnu_cxx::new_allocator<std::string>::destroy(std::string*) [141] std::allocator<std::string>::~allocator() [50] std::pair<int, int>* std::uninitialized_copy<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*)
+ [119] __gnu_cxx::new_allocator<std::string>::allocate(unsigned int, void const*) [53] std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [69] std::_Deque_iterator<std::string, std::string&, std::string*> std::uninitialized_copy<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>)
+  [97] __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [86] std::allocator<std::pair<int, int> >::allocator() [43] std::pair<int, int>* std::__uninitialized_copy_a<std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >)
+ [153] __gnu_cxx::new_allocator<std::string>::new_allocator(__gnu_cxx::new_allocator<std::string> const&) [66] std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [61] std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_a<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::string>(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::allocator<std::string>)
+ [161] __gnu_cxx::new_allocator<std::string>::new_allocator() [82] std::allocator<std::pair<int, int> >::~allocator() [64] std::pair<int, int>* std::__uninitialized_copy_aux<std::pair<int, int>*, std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, std::pair<int, int>*, std::__false_type)
+ [123] __gnu_cxx::new_allocator<std::string>::~new_allocator() [84] std::allocator<std::pair<int, int> >::~allocator() [83] std::_Deque_iterator<std::string, std::string&, std::string*> std::__uninitialized_copy_aux<std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*> >(std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string const&, std::string const*>, std::_Deque_iterator<std::string, std::string&, std::string*>, std::__false_type)
+ [104] __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int) [68] std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::_Deque_impl(std::allocator<std::string> const&) [133] unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  [72] __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [101] std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_impl::~_Deque_impl() [88] void std::_Destroy<std::string*>(std::string*, std::string*)
+  [94] __gnu_cxx::new_allocator<std::pair<int, int> >::construct(std::pair<int, int>*, std::pair<int, int> const&) [60] std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_map(unsigned int) [78] void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>)
+  [71] __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [62] std::_Deque_base<std::string, std::allocator<std::string> >::_M_create_nodes(std::string**, std::string**) [42] void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*)
+  [92] __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator() [70] std::_Deque_base<std::string, std::allocator<std::string> >::_M_allocate_node() [35] void std::_Destroy<std::pair<int, int>*, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int>*, std::allocator<std::pair<int, int> >)
+ [102] __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [51] std::_Deque_base<std::string, std::allocator<std::string> >::_M_destroy_nodes(std::string**, std::string**) [165] void std::_Destroy<std::string>(std::string*)
+  [57] __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [74] std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_map(std::string**, unsigned int) [126] void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*)
+ [129] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [28] std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int) [135] bool std::operator==<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&)
+  [65] bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [67] std::_Deque_base<std::string, std::allocator<std::string> >::_M_deallocate_node(std::string*) [134] bool std::operator==<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+  [81] game::last_mover() const [124] std::_Deque_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [112] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+ [109] game::next_mover() const [25] std::_Deque_base<std::string, std::allocator<std::string> >::_Deque_base(std::allocator<std::string> const&, unsigned int) [100] std::_Deque_iterator<std::string, std::string&, std::string*>::difference_type std::operator-<std::string, std::string&, std::string*>(std::_Deque_iterator<std::string, std::string&, std::string*> const&, std::_Deque_iterator<std::string, std::string&, std::string*> const&)
+ [170] game::next_player() const [33] std::_Deque_base<std::string, std::allocator<std::string> >::~_Deque_base() [121] bool std::operator!=<std::string, std::string const&, std::string const*>(std::_Deque_iterator<std::string, std::string const&, std::string const*> const&, std::_Deque_iterator<std::string, std::string const&, std::string const*> const&)
+  [46] game::moves_completed() const [59] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [163] bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+ [144] game::winning() const  [47] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [173] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [10] Board::inside_board(int, int) const [63] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [152] operator new(unsigned int, void*)
+  [17] Reversi::last_color() const [52] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int)

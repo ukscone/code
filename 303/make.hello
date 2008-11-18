@@ -1,0 +1,12 @@
+FFOPTS = -c 
+.SUFFIXES: .o .f90
+
+OBJS   = hello3.o
+
+#-----------------------------------------------------------------------------------
+
+hello : $(OBJS)
+	f95 -o hello3 $(OBJS)
+
+hello3.o : hello3.f90
+	f95 $(FFOPTS) hello3.f90

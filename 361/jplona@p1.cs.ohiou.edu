@@ -1,0 +1,42 @@
+1)
+
+2) ((10, cat) (3, dog) (9, bird) (3, cow))
+
+	Sorting with quicksort yields:
+	
+	((3, cow) (3, dog) (9, bird) (10, cat))
+	
+3) An MSD radix sort would be more efficient than an LSD radix sort when each key reaches a unique prefix within a relatively short number of digits.
+
+4) It's the same as a 2-digit radix sort, except on floor(log10(n-1)) digits.
+
+5) 
+	bool SymbolTable::Delete(const identifier& x, int (* hashfunc)(identifier)) {
+		int i = hashfunc(x);
+		for(int j = i; ht[j].id && ht[j] != x;) {
+			j = (j++) % num_buckets;
+			if(j==i) return false; //x not found
+		}
+		if(ht[j] == x) {
+			ht[j].id = "";
+			return true;
+		}
+		else return false;
+	}
+	
+6)
+	#include <algorithm>
+	
+	void SymbolTable::ListInOrder() {
+		vector<identifier> ids;
+		
+		for (int j = 0; j < num_buckets; ++j)
+			if(ht[j]) ids.push_back(ht[j].id);
+			
+		sort(ids.begin(), ids.end());
+		
+		for(vector<identifier>::iterator p = ids.begin(); p != ids.end(); ++p)
+			cout << *p << endl;
+	}
+	
+	O(nlogn) + O(n) = O(nlogn)

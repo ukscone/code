@@ -1,0 +1,6 @@
+t1:t1.o FaceSpace.o
+	g++ -o t1 t1.o FaceSpace.o
+t1.o:t1.cc
+	g++ -c t1.cc
+FaceSpace.o:FaceSpace.cc FaceSpace.h
+	g++ -c FaceSpace.cc

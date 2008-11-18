@@ -1,0 +1,111 @@
+/* Author:  Jonathan Plona
+   Date:    January 16, 2008 */
+ 
+#include <iostream>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <fstream>
+#include "mergesort.cpp"
+#include "simplesort.cpp"
+#include "itermergesort.cpp"
+
+using namespace std;
+
+void fill_array(int a[], int size);
+void get_input(int& size, int& step, int& randseed);
+double time_diff(timeval before, timeval after);
+
+int seed;
+
+int main()
+{
+    int size, step;
+    ofstream output("output.csv");
+    
+    get_input(size, step, seed);
+    
+    output << "Data Size,MergeSort,SimpleSort" << endl;
+    
+    cout << "Testing..." << endl;
+    for(int x = step; x <= size; x += step)
+    {
+        cout << "Testing " << x << " elements..." << endl;
+        
+        timeval before, after;
+        int test_data[x];
+        
+        //(re)set data for mergesort
+        fill_array(test_data, x);
+        
+        //mergesort
+        gettimeofday(&before, NULL);
+        merge_sort(test_data, x, 0);
+        gettimeofday(&after, NULL);
+        
+        //Test data
+        for(int y = 0; y < x - 1; ++y) {
+            if(test_data[y]>test_data[y+1]) {
+                cout << "Oops, output not sorted..."<< endl;
+            }
+        }
+        
+        //Output data in csv format
+        output <<  x << "," << time_diff(before, after) << ",";
+        
+        //reset data for simplesort
+        fill_array(test_data, x);
+        
+        //simplesort
+        gettimeofday(&before, NULL);
+        simple_sort(test_data, x);
+        gettimeofday(&after, NULL);   
+        
+        //Test data
+        for(int y = 0; y < x - 1; ++y) {
+            if(test_data[y]>test_data[y+1]) {
+                cout << "oops"<< endl;
+            }
+        }
+        
+        //Output data in csv format
+        output << time_diff(before, after) << endl;
+    }
+    
+    cout << "Output stored in file 'output.csv'" << endl;
+    output.close();
+
+    return 0;
+}
+
+void fill_array(int a[], int size)
+{
+    //ensure data remains the same between tests
+    srand(seed);
+    
+    //fill with random values
+    for(int x = 0; x < size; ++x)
+    {
+        a[x] = rand();
+    }
+}
+
+void get_input(int& size, int& step, int& randseed)
+{
+    cout << "Please enter the maximum number of test data: " << endl;
+    cin >> size;
+    cout << "Please enter a step size: " << endl;
+    cin >> step;
+    cout << "Please enter a seed: " << endl;
+    cin >> randseed;
+}
+
+double time_diff(timeval before, timeval after)
+{
+    int seconds, useconds;
+    
+    useconds = (after.tv_sec*1000000 + after.tv_usec) - (before.tv_sec*1000000 + before.tv_usec);
+    seconds = useconds / 1000000;
+    useconds = useconds % 1000000;
+        
+    return seconds + useconds/1000000.0;
+}

@@ -1,0 +1,1 @@
+gcc *.c -lgambc -lm -ldl -lutil -I/usr/local/Gambit-C/current/include -L/usr/local/Gambit-C/current/lib

@@ -1,0 +1,2 @@
+Please enter an integer number of seconds: 15962
+4 hours 26 minutes and 2 second

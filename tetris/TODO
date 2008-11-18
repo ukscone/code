@@ -1,0 +1,43 @@
+expand Kelli's picture a bit -- DONE
+
+press F2 to start new game -- DONE (game starts paused)
+
+push s to enable/disable sounds (mute/unmute)
+
+write a panel class -- DONE
+
+reorganize main in terms of panels -- DONE
+
+scoring/preview panel
+
+scoring/levels
+
+preview
+
+speedup
+
+pause text
+
+high scores
+
+dropping a piece should spawn a new one immediately
+
+fix ugly game-ending
+
+when pushing the down arrow repeatedly, the automatic drop should not occur (reset drop time if key == K_DOWN)
+
+fix music restarting on pause
+
+version 2 complete
+
+
+
+random music from 'music' folder
+
+random background from 'background' folder
+
+menu/preferences
+
+resizing
+
+themes

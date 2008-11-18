@@ -1,0 +1,4 @@
+x.in:x.out
+	cat x.out >x.in
+x.out:x.source
+	cat x.source > x.out

@@ -1,0 +1,15 @@
+: .{12} 40 
+ 
+'\x02(\x01\x00{3}|\x00{4}\+1)(\d{10})\x00([^\x02\x0C]{1,4})\x00\x04([^\x02\x0C]+)\x0C\x00\x07(\x00{12}|\x00\x04\x00{8}\x01\x01\x3A)'
+
+groups
+
+0   garbage
+
+1   phone number
+
+2   number of characters in message
+
+3   message text
+
+4   sent or received

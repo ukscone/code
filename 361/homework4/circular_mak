@@ -1,0 +1,8 @@
+smake:main.o Time.o Dependency.o
+	g++ -o smake main.o Time.o Dependency.o
+main.o:main.cc Time.h
+	g++ -c main.cc
+Time.o:Time.cc
+	g++ -c Time.cc
+Dependency.o:Dependency.cc Dependency.h smake
+	cat smake
